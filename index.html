@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouthBook</title>
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" type="text/css" href="styles/header.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="icons/youthbook.PNG">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Header-->
+<div class="Navigation-bar">
+    
+    <div class="YouthBook-pic">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+        <img class="youtube-logo" src="icons/youthbook.PNG">
+    </div>
+
+    <div class="search-bar">
+        <input class="Search-box" type="text" placeholder="Search">
+         <button class="img-1" onclick="search()">
+             <img class="search-img" src="icons/search.svg">
+         </button>
+         <button class="img-2">
+             <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+         </button>
+    </div>  
+
+    <div class="account-section">
+        
+            <img class="upload-icons" src="icons/upload.svg">
+       
+         
+            <img class="youtube-apps-icons" src="icons/youtube-apps.svg">
+        
+         
+            <img class="notification-icons" src="icons/notifications.svg">
+            
+         
+            <img class="profile-icons" src="Channel-pic/babyyy.jpg">
+    </div>
+</div>
+
+<!--Sidebar-->
+
+<nav class="sidebar">
+    <div class="sidebar-box">
+        <img class="home-icon" src="sidebar-icon/home.svg" alt=""> 
+        <div class="sidebar-text"><p>Home</p></div>
+    </div>
+    <div class="sidebar-box">
+        <img class="explore-icon" src="sidebar-icon/explore.svg" alt="">
+        <div class="sidebar-text"><p>Explore</p></div>
+    </div>
+    <div class="sidebar-box">
+        <img class="subscription-icon" src="sidebar-icon/subscriptions.svg" alt="">
+        <div class="sidebar-text"><p>Subscriptions</p></div>
+    </div>
+    <div class="sidebar-box">
+        <img class="originals-icon" src="sidebar-icon/originals.svg" alt="">
+        <div class="sidebar-text"><p>Originals</p></div>
+    </div>
+    <div class="sidebar-box">
+        <img class="youtube-music-icon" src="sidebar-icon/youtube-music.svg" alt="">
+        <div class="sidebar-text"><p>Youtube Music</p></div>
+    </div>
+    <div class="sidebar-box">
+        <img class="library-icon" src="sidebar-icon/library.svg" alt="">
+        <div class="sidebar-text"><p>Library</p></div>
+    </div>
+</nav>
+ <!--Video Thumbnail-->
+<div class="video-grid">
+    <div class="video-box">
+        <div class="thumbnail-row"> <img class="thumbnail" src="Thumbnail-pic/1.webp" alt=""> 
+        </div>
+        <div class="video-info-grid">
+            <div class="channel-pic">
+                <img class="profile-img" src="Channel-pic/olor.jpg" alt=""></div>
+                <div class="video-info"><p class="video-title">Talking Tech and AI with Google  CEO Sundar Pichai!</p>
+                <p class="video-author"> Justine Olor</p>
+                <p class="video-details">3.4M views &#183 6 months ago</p>
+            </div>
+        </div> 
+    </div>
+    <div class="video-box">
+        <div class="thumbnail-row"> <img class="thumbnail" src="Thumbnail-pic/2.webp" alt=""> 
+        </div>
+        <div class="video-info-grid">
+            <div class="channel-pic">
+                <img class="profile-img" src="Channel-pic/sherwin.jpg" alt=""></div>
+                <div class="video-info">
+                <p class="video-title">Try Not To Laugh Challenge #9 </p>
+                <p class="video-author"> Sherwin Ramirez</p>
+                <p class="video-details">19M views &#183 4 years ago</p>
+            </div>
+        </div> 
+    </div>
+    <div class="video-box">
+        <div class="thumbnail-row"> <a href="https://youtube.com"><img class="thumbnail" src="Thumbnail-pic/3.webp" alt=""></a> 
+        </div>
+        <div class="video-info-grid">
+            <div class="channel-pic">
+                <img class="profile-img" src="Channel-pic/robert.jpg" alt=""></div>
+            <div class="video-info"><p class="video-title"> Revealing my true Identity!!! I'm a Gay</p>
+                <p class="video-author"> Robert Santiago</p>
+                <p class="video-details">7.4B views &#183 2 days ago</p>
+            </div>
+        </div> 
+    </div>
+    <div class="video-box">
+        <div class="thumbnail-row"> <img class="thumbnail" src="Thumbnail-pic/4.webp" alt=""> 
+        </div>
+        <div class="video-info-grid">
+            <div class="channel-pic">
+                <img class="profile-img" src="Channel-pic/jerico.jpg" alt=""></div>
+            <div class="video-info"><p class="video-title"> TECH WITH ME</p>
+                <p class="video-author"> JERICOBuratzu</p>
+                <p class="video-details">5.4M views &#183 2 months ago</p>
+            </div>
+        </div> 
+    </div>
+    <div class="video-box">
+        <div class="thumbnail-row"> <a href="https://www.youtube.com/watch?v=_9rgFyn6FMM&list=RD_9rgFyn6FMM&start_radio=1"><img class="thumbnail" src="Thumbnail-pic/sinon.jpg" alt=""> </a>
+        </div>
+        <div class="video-info-grid">
+            <div class="channel-pic">
+                <img class="profile-img" src="Channel-pic/kian.jpg" alt=""></div>
+            <div class="video-info"><p class="video-title"> Mix - Sword Art Online II ✧ Opening 3 full 「AMV」✧ Ignite ✧ [ HD ]
+               </p>
+                <p class="video-author"> Kian Villanueva</p>
+                <p class="video-details">1.4B views &#183 2 days ago</p>
+            </div>
+        </div> 
+    </div>
+    <div class="video-box">
+        <div class="thumbnail-row"> <img class="thumbnail" src="Thumbnail-pic/5.webp" alt=""> 
+        </div>
+        <div class="video-info-grid">
+            <div class="channel-pic">
+                <img class="profile-img" src="Channel-pic/brix.jpg" alt=""></div>
+            <div class="video-info"><p class="video-title"> [ playlist ] late night music | work & study with me (relaxing, romantic, chill) luvE</p>
+                <p class="video-author"> Brix-lonelyboy</p>
+                <p class="video-details">3z .4M views &#183 2 months ago</p>
+            </div>
+        </div> 
+    </div>
+    <div class="video-box">
+        <div class="thumbnail-row"> <img class="thumbnail" src="Thumbnail-pic/4.webp" alt=""> 
+        </div>
+        <div class="video-info-grid">
+            <div class="channel-pic">
+                <img class="profile-img" src="Channel-pic/4.jpeg" alt=""></div>
+            <div class="video-info"><p class="video-title"> TECH WITH ME</p>
+                <p class="video-author"> JERICOBuratzu</p>
+                <p class="video-details">5.4M views &#183 2 months ago</p>
+            </div>
+        </div> 
+    </div>
+    <div class="video-box">
+        <div class="thumbnail-row"> <img class="thumbnail" src="Thumbnail-pic/3.webp" alt=""> 
+        </div>
+        <div class="video-info-grid">
+            <div class="channel-pic">
+                <img class="profile-img" src="Channel-pic/3.jpeg" alt=""></div>
+            <div class="video-info"><p class="video-title"> Revealing my true Identity!!! I'm a Gay</p>
+                <p class="video-author"> Robert Santiago</p>
+                <p class="video-details">7.4B views &#183 2 days ago</p>
+            </div>
+        </div> 
+    </div>
+    <div class="video-box">
+        <div class="thumbnail-row"> <img class="thumbnail" src="Thumbnail-pic/4.webp" alt=""> 
+        </div>
+        <div class="video-info-grid">
+            <div class="channel-pic">
+                <img class="profile-img" src="Channel-pic/4.jpeg" alt=""></div>
+            <div class="video-info"><p class="video-title"> TECH WITH ME</p>
+                <p class="video-author"> JERICOBuratzu</p>
+                <p class="video-details">5.4M views &#183 2 months ago</p>
+            </div>
+        </div> 
+    </div>
+</div>
+</body>
+</html>
