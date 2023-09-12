@@ -32,17 +32,53 @@
 }
 
 .profile-img {
-    width: 40px;
+    width: 36px;
     border-radius: 50px;
 }
 .thumbnail-row {
     margin-bottom: 10px;
+    position: relative;
 }
+
+.time {
+    position: absolute;
+    right: 8px;
+    bottom: 10px;
+    background-color: black;
+    color: white;
+    padding: 4px;
+    font-size: 12px;
+    border-radius: 5px;
+    transition: box-shadow 0.3s;
+    font-weight: 500;
+}
+
 
 .video-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 16px;
     row-gap: 38px;
-    
+    font-family: Roboto, Arial;
+}
+
+@media (max-width: 770px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 771px) and (max-width: 1200px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1201px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+.youthbook-page {
+    background-color: rgb(238, 238, 238);
 }

@@ -11,12 +11,23 @@
 	left: 0px;
 	background-color: white;
 	border-bottom: 1px solid #cccccc;
-	
+	z-index: 100;
  }
  .YouthBook-pic {
  	display: flex;
     width: 160px;
     align-items: center;
+	position: relative;
+ }
+
+ .YouthBook-pic div {
+	position: absolute;
+	right: 0;
+	bottom: 38px;
+	font-size: 8px;
+	font-family: Roboto, Arial;
+	font-weight: 500;
+	color: gray;
  }
 
  .hamburger-menu {
@@ -48,15 +59,15 @@
 	box-shadow: inset 0px 1px 2px  #eeeeee;
 	font-size: 16px ;
 	font-family: Roboto, Arial;
+	outline-color: #7583f1;
 	width: 0;
+	outline-width: 0.5px;
+	
 }
-
-.Search-box::placeholder {
-	font-family: Roboto, Arial;
-	font-size: 16px;
+.Search-box:is(:focus, :valid) .search-bar {
+	max-width: 600px;
+	width: 500px;
 }
-
-
 
 .img-1 {
 	height: 39px;
@@ -69,10 +80,30 @@
 	background-color: transparent;
 	transition: background-color 0.5s;
 	cursor: pointer;
+	position: relative;
 }
 
+.img-1 .tooltip {
+	position: absolute;
+	right: 5px;
+	bottom: -30px;
+	background-color: black;
+	color: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 3px;
+	padding-right: 3px;
+	border-radius: 3px;
+	opacity: 0;
+	transition: 1s;
+	font-size: 12px;
+}
+.img-1:hover .tooltip {
+	opacity: 0.5;
+}
 .img-1:hover {
 	background-color: rgb(240, 240, 240);
+	
 }
 .img-1 img{
    margin-top: 4px;
@@ -86,7 +117,30 @@
 	border: none;
 	background-color: rgb(250, 248, 248);
 	cursor: pointer;
+    position: relative;
+}
+.img-2 .tooltip  {
+	position: absolute;
+	right: 0px;
+	bottom: -35px;
+	background-color: black;
+	color: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 3px;
+	padding-right: 3px;
+	border-radius: 3px;
+	opacity: 0;
+	transition: 1s;
+	font-size: 12px;
+	width: 100px;
+}
+.img-2:hover .tooltip {
+	opacity: 0.5;
+}
 
+.img-2:hover {
+	background-color: rgb(240, 240, 240);
 }
 .voice-search-icon {
 	height: 24px;
@@ -103,25 +157,64 @@
 	flex-shrink: 0;
 	
 }
-.upload-icons {
-	width: 25px;
+
+.upload-icons, .youtube-apps-icons, .notification-icons {
+	width: 23px;
 }
-.youtube-apps-icons {
-	width: 25px;
-}
-.notification-icons {
-	width: 25px;
-}
-.notification-number {
-	width: 16px;
-	border-radius: 13px;
-	background: red;
+
+
+.notification-count {
+	position: absolute;
+	top: -2px;
+	right: -1px;
+	background-color: rgb(131, 42, 42);
+	font-size: 10px;
+	font-family: Roboto, Arial;
 	color: white;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 }
 .profile-icons {
 	width: 35px;
 	height: 35px;
 	border-radius: 17.5px;
 }
+.upload-icon-container, .youtube-apps-icon-container,  .notification-icon-container {
+   position: relative;
+   border-radius: 10px;
+   padding-left: 3px;
+   padding-right: 3px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   
+}
+
+.upload-icon-container .tooltip, .youtube-apps-icon-container .tooltip, .profile-icon-container .tooltip, .notification-icon-container .tooltip  {
+	position: absolute;
+	right: 0px;
+	bottom: -35px;
+	background-color: gray;
+	color: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 3px;
+	padding-right: 3px;
+	border-radius: 3px;
+	opacity: 0;
+	transition: 1s;
+	font-size: 12px;
+	font-family: Roboto, Arial;
+}
+
+ .upload-icon-container:hover, .youtube-apps-icon-container:hover, .notification-icon-container:hover .profile-icon-container:hover {
+	background-color: rgb(240, 240, 240);
 
 
+}
+
+ .upload-icon-container:hover .tooltip, .youtube-apps-icon-container:hover .tooltip, .notification-icon-container:hover .tooltip, .profile-icon-container:hover .tooltip  {
+	opacity: 1;
+}
